@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pantallas.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/gifArchivo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/portada"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-30dp" />
+
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="188dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/start_game_button" />
+
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_width="191dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="228dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifArchivo"
+        app:layout_constraintVertical_bias="0.61"
+        app:srcCompat="@drawable/exit_button" />
+
+    <ImageButton
+        android:id="@+id/btnInformacion"
+        android:layout_width="188dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="308dp"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btnExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStart"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/information_button" />
+
+    <ImageButton
+        android:id="@+id/btnArchivo"
+        android:layout_width="188dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/gifArchivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInformacion"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/archivo_palabras" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/titulo_juego" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
